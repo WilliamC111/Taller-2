@@ -37,9 +37,12 @@ public class model {
 			}
 			return counter;
 		}
-	private static int searchVehicle(int id) {
+	private static int searchVehicle(String brand) {
 		
 		return id = 0;
 	}
-
+private static int searchId(int id) {
+		
+		return id = 0;
+	}
 }
