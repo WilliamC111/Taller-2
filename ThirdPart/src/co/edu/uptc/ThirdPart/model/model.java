@@ -37,9 +37,9 @@ public class model {
 			}
 			return counter;
 		}
-	private static int searchVehicle(String brand) {
+	private static int showVehicle(String vehicles) {
 		
-		return id = 0;
+		return  = vehicles;
 	}
 private static int searchId(int id) {
 		
