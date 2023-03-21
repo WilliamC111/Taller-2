@@ -44,14 +44,14 @@ public class model {
 	
 private static String  searchVehicle(int id, String path) {
 		 String vehicles = null;
-		File carpeta = new File(path);
-		String[] listado = carpeta.list();
-		if (listado == null || listado.length == 0) {
+		File folder = new File(path);
+		String[] list1 = folder.list();
+		if (list1 == null || list1.length == 0) {
 		    System.out.println("No hay elementos dentro de la carpeta actual"); 	
 		}
 		else {
-		    for (int i=0; i< listado.length; i++) {
-		        System.out.println(listado[i]);
+		    for (int i=0; i< list1.length; i++) {
+		        System.out.println(list1[i]);
 		    }
 		}
 		return vehicles ;
