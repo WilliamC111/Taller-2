@@ -3,11 +3,11 @@ package co.edu.uptc.ThirdPart.view;
 import java.util.Scanner;
 
 public class View {
-	private Scanner input;
+    private Scanner input;
 
-    public View(){
-Scanner input = new Scanner(System.in);
-	}
+    public View() {
+        input = new Scanner(System.in);
+    }
 
     public void showMessage(String message) {
         System.out.println(message);

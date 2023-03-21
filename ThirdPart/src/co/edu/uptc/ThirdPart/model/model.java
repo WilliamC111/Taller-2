@@ -1,48 +1,64 @@
 package co.edu.uptc.ThirdPart.model;
 
-public class model {
-  private static Vehicle readVehicle(String path) {
-		Vehicle vehicle  = new Vehicle();
-		try (DataInputStream stream = new DataInputStream(new FileInputStream(path))) {
-			vehicle.setBrand(stream.readUTF());
-		  vehicle.setModel(stream.readUTF());
-	    vehicle.setYear(stream.readInt());
-			vehicle.setLicensePlate(stream.readUTF());
-			vehicle.setColor(stream.readUTF());		
-		} catch (Exception e) {
-			System.err.println(e.getStackTrace());
-		}
-		return vehicle;
+public class Vehicle {
+	private String brand;
+	private String model;
+	private int year;
+	private String licensePlate;
+	private String color;
+	private int id;
+
+	public String getBrand() {
+		return brand;
 	}
-		
-	public static int readId (String path) {
-	
-			int counter = 0;
-			try {
-				FileReader fileReader = new FileReader(path);
-				BufferedReader bufferedReader = new BufferedReader(fileReader);
-				String line = bufferedReader.readLine();
-				while (line != null) {
-					for (int i = 0; i < line.length(); i++) {
-							counter++;
-						}
-					}
-					line = bufferedReader.readLine();
-				
-				bufferedReader.close();
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			return counter;
-		}
-	private static int showVehicle(String vehicles) {
-		
-		return  = vehicles;
+
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
-private static int searchId(int id) {
-		
-		return id = 0;
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public String getLicensePlate() {
+		return licensePlate;
+	}
+
+	public void setLicensePlate(String licensePlate) {
+		this.licensePlate = licensePlate;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [brand=" + brand + ", model=" + model + ", year=" + year + ", licensePlate=" + licensePlate
+				+ ", color=" + color + ", id=" + id + "]";
 	}
 }

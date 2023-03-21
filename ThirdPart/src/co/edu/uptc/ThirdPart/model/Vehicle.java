@@ -1,17 +1,12 @@
 package co.edu.uptc.ThirdPart.model;
 
 public class Vehicle {
-<<<<<<< HEAD
-
-=======
-private String brand;
-    private String model;
-    private int year;
-    private String licensePlate;
-    private String color;
-    private int id;
-    
-	
+	private String brand;
+	private String model;
+	private int year;
+	private String licensePlate;
+	private String color;
+	private int id;
 
 	public String getBrand() {
 		return brand;
@@ -66,7 +61,4 @@ private String brand;
 		return "Vehicle [brand=" + brand + ", model=" + model + ", year=" + year + ", licensePlate=" + licensePlate
 				+ ", color=" + color + ", id=" + id + "]";
 	}
-	
-}
->>>>>>> 92f2c8dafc71ea7e95b8ef94480fb160835d4550
 }
